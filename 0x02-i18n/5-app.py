@@ -52,7 +52,7 @@ def index() -> str:
 
 
 @babel.localeselector
-def get_locael() -> str:
+def get_locale() -> str:
     '''get the best match for supported langs'''
     data = request.args.get('locale')
     if data in app.config['LANGUAGES']:
